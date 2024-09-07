@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1002553484719",
+    "project_id": "bicycle-rental-new",
+    "storage_bucket": "bicycle-rental-new.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002553484719:android:cbb044a2dbdfbf87687b5a",
+        "android_client_info": {
+          "package_name": "com.example.bicyclerental"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1I6PTn_bR9JWAWdGvmsIFnBrEv3cwepQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvGreet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="10dp"
+            android:text="Choose your Ride 🚴️"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUserName" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="15dp"
+            android:backgroundTint="@color/dark_blue"
+            android:elevation="20dp"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvGreet">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Explore all Bicycles"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/riderAnimation"
+            android:layout_width="300dp"
+            android:layout_height="240dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card"
+            android:layout_margin="10dp"
+            app:lottie_rawRes="@raw/rider"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pedal Your Adventure: Rent,Ride,Explore!"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/riderAnimation"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/trend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sell All trending Bicycle"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tagline"
+            android:layout_margin="25dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvTrend"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="20dp"-->
+<!--            android:layout_marginTop="25sp"-->
+<!--            android:text="Treanding Bicycle"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/card" />-->
+
+<!--        <ScrollView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/tvTrend">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/card_three"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:layout_marginVertical="15dp"-->
+<!--                    android:backgroundTint="@color/light_grey"-->
+<!--                    android:elevation="10dp"-->
+<!--                    app:cardCornerRadius="25dp">-->
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvName_three"-->
+<!--                            android:layout_width="180dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="15dp"-->
+<!--                            android:layout_marginTop="30dp"-->
+<!--                            android:text="FOCUS Bicycle"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="26dp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvRating_three"-->
+<!--                            android:layout_width="180dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="15dp"-->
+<!--                            android:layout_marginTop="30dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="4.2⭐"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="18dp"-->
+<!--                            app:layout_constraintBottom_toTopOf="@id/tvRate_three"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@id/tvName_three" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvRate_three"-->
+<!--                            android:layout_width="180dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="15dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="50 Rs - per hour"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="18dp"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@id/tvRating_three" />-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/ivImageThree"-->
+<!--                            android:layout_width="200dp"-->
+<!--                            android:layout_height="200dp"-->
+<!--                            android:src="@drawable/new_bg3"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/card_four"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:layout_marginHorizontal="20dp"-->
+<!--                    android:layout_marginVertical="15dp"-->
+<!--                    android:backgroundTint="@color/light_grey"-->
+<!--                    android:elevation="10dp"-->
+<!--                    app:cardCornerRadius="25dp">-->
+
+<!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvName_four"-->
+<!--                            android:layout_width="180dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="15dp"-->
+<!--                            android:layout_marginTop="30dp"-->
+<!--                            android:text="SHENAL Bicycle"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="26dp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvRating_four"-->
+<!--                            android:layout_width="180dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="15dp"-->
+<!--                            android:layout_marginTop="30dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="4.2⭐"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="18dp"-->
+<!--                            app:layout_constraintBottom_toTopOf="@id/tvRate_four"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@id/tvName_four" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/tvRate_four"-->
+<!--                            android:layout_width="180dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="15dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="50 Rs - per hour"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="18dp"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@id/tvRating_four" />-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/ivImageFour"-->
+<!--                            android:layout_width="200dp"-->
+<!--                            android:layout_height="200dp"-->
+<!--                            android:src="@drawable/new_bg2"-->
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </ScrollView>-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
